@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LORENABOOKS</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Lorenabook</h1>
+
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Romance</a>
+                </li>
+            </ul>
+            <img src="img/Reading.svg" alt="logo">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">LORENA</b>BOOKS</h1>
+
+            <ul class="opções">
+                <input type="checkbox" id="opções-menu" class="opções__botão" />
+                <label for="opções-menu" class="opções__rotulo">
+                    <li class="opções__item">Categorias</li>
+                </label>
+
+                <ul class="lista-menu">
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Ação</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Romance</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Todos os gêneros...</a>
+                    </li>
+                </ul>
+                <ul class="opções">
+                    <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+                    <li class="opções__item"><a href="#" class="opções__link">Lista de Leitura</a></li>
+                </ul>
+        </div>
+
+        <div class="container">
+            <a href="#"><img src="img/Book 02.svg" alt="Lista de Leitura"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#"><img src="img/Favoritos.svg" alt="Favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="img/books.svg" alt="Todos os Livros" class="container__imagem">
+                <p class="container__texto">Todos os livros</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="Perfil" class="container__imagem">
+                <P class="container__texto">Perfil</P>
+            </a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__titulo">Recomendações de livros para você!</h2>
+        <p class="banner__texto">Pesquise um livro aqui"</p>
+        <input type="search" class="banner__pesquisa" placeholder="Escolha sua proxima leitura">
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Os mais recomendados</h2>
+        <div class="carrossel__container">
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/Wicked.svg" alt="Wicked capa" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/PJO.svg" alt="Percy Jackson Capa" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/OSMDEH.svg" alt="Os Sete Maridos de Evelyn Hugo Capa" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/DJ&T6.svg" alt="Daisy Jones & the Six capa" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/OCDA.svg" alt="O Conto de Aia capa" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/ACK.svg" alt="As crônicas de Kane capa" />
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <div class="card__descrição">
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">O MAIS LIDO</h3>
+                        <h2 class="descrição__titulo-livro">As Crônicas de Nárnia</h2>
+                        <p class="descrição__texto">Em O Leão, a Feiticeira e o Guarda-roupa, quatro irmãos
+                            descobrem um guarda-roupa mágico que os leva a Nárnia, um reino congelado pela
+                            Feiticeira Branca. Guiados por um leão, eles são a chave para cumprir uma profecia e
+                            salvar o reino.</p>
+                    </div>
+                    <img src="img/Narnia.svg" class="descrição__imagem">
+                </div>
+                <div class="card__botões">
+                    <ul class="botões">
+                        <li class="botões_item"><a href="#" class="opções__link"></a><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões_item"><a href="#" class="opções__link"></a><img src="img/Book 02.svg" alt="Adicionar na lista de leitura">
+                        </li>
+                    </ul>
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">TOP 6 LIVROS</h2>
+        <div class="carrossel__container">
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/JV.svg" alt="Jogos Vorazes" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/MZ.svg" alt="Maze Runner" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/HS.svg" alt="Heartstoper" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/TDM.svg" alt="Turma da Monica" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Essa e a pele de um assasino bela.svg" alt="Crepusculo" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/ZC.svg" alt="Zé Carioca" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card__descrição">
+                <div class="descrição">
+                    <img src="img/Component 1.svg" alt="5 estrelas">
+                    <h3 class="descrição__titulo">Autor(a) do mês</h3>
+                    <h2 class="descrição__titulo-livro">Rick Riordan</h2>
+                    <p class="descrição__texto">Richard Russell Riordan Jr.
+                        , mais conhecido como Rick Riordan, é um escritor norte-americano,
+                        mais conhecido por escrever a série Percy Jackson e Os Olimpianos de
+                        2005 a 2009.</p>
+                </div>
+                <img src="img/Rick Riordan 1.svg" class="descrição__imagem">
+            </div>
+            <div class="card__botões">
+                <ul class="botões">
+                    <li class="botões_item"><img src="img/Favoritos.svg" alt="Favoritar livro">
+                    </li>
+                    <li class="botões_item"><img src="img/Book 02.svg" alt="Adicionar na lista de leitura"></li>
+                </ul>
+                <a href="#" class="botões__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">VISITADOS RECENTEMENTE</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Fantasia</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Livros LGBTQIA+</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Female Leads</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Internacionais</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Livros novos para você ler sem precisar pesquisar!
+            </h2>
+            <p class="contato__texto">Recomendações diariamente no seu email para você"</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+    <hr />
+
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">Recomendador de Livros - LORENABOOKS</h2>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé_titulo">Ajuda</li>
+            <li class="lista-rodapé__item">
+                <img src="img/Info Circle.svg" alt="informações">
+                <a href="#" class="lista-rodapé__link">Central de ajuda</a>
+            </li>
+        </ul>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé_titulo">Redes Sociais</li>
+            <li class="lista-rodapé__item">
+                <img src="img/Sign At.svg" alt="twitter">
+                <a href="#" class="lista-rodapé__link">Lorenabooks no X</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/icon.svg" alt="Discord">
+                <a href="#" class="lista-rodapé__link">Lorenabooks - Grupo de Leitura</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
